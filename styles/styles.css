@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+div.panel {
+  background-color: #000000;
+  opacity: 0.1;
+}
+
+div.location-form {
+  display: flex;
+  justify-content: center;
+}
