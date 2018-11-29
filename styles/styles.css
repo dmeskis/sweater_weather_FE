@@ -10,6 +10,16 @@ ul {
   list-style: none;
 }
 
+input[type=text] {
+  border-radius: 25px;
+  background-color: white;
+  width: 200px;
+}
+
+.sexy-submit {
+  border-radius: 25px;
+}
+
 .user-options {
 
 }
@@ -208,14 +218,14 @@ footer {
 .panel {
   border-radius: 25px;
   padding: 6px 6px 6px 6px;
-  margin: 6px 6px 6px 6px;
+  margin: 8px 8px 8px 8px;
   background: rgba(0, 0, 0, 0.7);
   /* background-clip: content-box; */
-  /* box-shadow: 12px 12px 2px black; */
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.9);
 }
 
 .panel:hover {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 div.location-form {
