@@ -178,10 +178,14 @@ footer {
 }
 
 .panel:hover {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 div.location-form {
   display: flex;
   justify-content: center;
+}
+
+body {
+    background: black;
 }
