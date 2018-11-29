@@ -36,7 +36,7 @@ ul {
 
 .bg {
     /* The image used */
-    background-image: url("./46070363971_d54cf246cd_k.jpg");
+    background-image: url("./45820613261_7ad2805177_k.jpg");
 
     /* Full height */
     height: 100%;
@@ -87,12 +87,12 @@ ul {
   margin: 1em;
 }
 
-header,
+/* header,
 section,
 footer {
     margin: 0;
-    padding: 1px; /* tweaked from 0 to 1px */
-}
+    padding: 1px;
+} */
 
 .temperature {
   font-size: 70px;
@@ -172,9 +172,13 @@ footer {
 
 .panel {
   border-radius: 25px;
-  padding: 10px 10px 10px 10px;
+  padding: 8px 8px 8px 8px;
   background: rgba(0, 0, 0, 0.7);
   background-clip: content-box;
+}
+
+.panel:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 div.location-form {
