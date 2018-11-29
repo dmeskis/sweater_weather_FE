@@ -77,9 +77,9 @@ footer {
 }
 
 .temperature {
-  font-size: 40px;
+  font-size: 70px;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   padding-left: 50px;
 }
 
