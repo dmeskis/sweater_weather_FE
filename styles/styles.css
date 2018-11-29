@@ -6,6 +6,10 @@ html {
   height: 100%
 }
 
+ul {
+  list-style: none;
+}
+
 .img-small {
   height: 15px;
   width: 15px;
@@ -137,6 +141,10 @@ footer {
 
 .item-middle-right {
   grid-area: middle-right;
+}
+
+.item-middle-left {
+  grid-area: middle-left;
 }
 
 .item-bottom-row-right {
