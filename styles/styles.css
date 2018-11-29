@@ -10,6 +10,12 @@ ul {
   list-style: none;
 }
 
+.panel-title {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
 .datetime {
   justify-content: center;
   font-size: 30px
