@@ -6,21 +6,20 @@
   <title>Sweater Weather</title>
 </head>
 <body>
+
+
       <!--  the a tag below can link you to another HTML page  -->
       <!--  if you click the button in the browser right now, you'll get an error because that is not a real file path -->
       <a href="<file path"><button class="default-button">GO TO OTHER PAGE</button></a>
 
       <div class='location-form'>
-        <form action="/city.html">
+        <form action="./city.html">
           <h4>Enter your location:</h4>
           <input type="text" name="location" onfocus="this.value=''" value="City, state..."><br>
           <input type="submit" value="Submit">
         </form>
       </div>
-
-    <script
-    src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
-  </script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src="main.bundle.js"></script>
 </body>
 </html>
