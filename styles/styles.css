@@ -10,6 +10,10 @@ ul {
   list-style: none;
 }
 
+.time {
+  font-size: 25px;
+}
+
 .img-small {
   height: 15px;
   width: 15px;
