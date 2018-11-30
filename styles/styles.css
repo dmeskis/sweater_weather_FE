@@ -25,7 +25,17 @@ input[type=text] {
 }
 
 .user-options {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
 
+a {
+  font-weight: bold;
+  color: white;
+}
+
+a:hover {
+  color: #006beb;
 }
 
 .search {
@@ -145,7 +155,7 @@ footer {
 
 .temperature {
   font-size: 70px;
-  color: yellow;
+  color: #e6e600;
   display: flex;
   justify-content: center;
   padding-left: 50px;
@@ -233,8 +243,8 @@ footer {
 }
 
 .panel:hover {
-  transition: all .3s ease-in-out;
-  background: rgba(0, 0, 0, 0.5);
+  transition: all .2s ease-in-out;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 div.location-form {
