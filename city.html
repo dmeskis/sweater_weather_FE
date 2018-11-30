@@ -5,53 +5,77 @@
   <link rel="stylesheet" href="styles/styles.css" />
   <title>Sweater Weather</title>
 </head>
-<body class='bg'>
+<body class='bg' onload="startTime()">
+
+  <div class='nav-bar'>
+    <div class='search-bar'>
+      <form action="./city.html">
+        <input type="text" name="location" onfocus="this.value=''" value="City, state...">
+        <input class='sexy-submit' type="submit" value="Search">
+      </form>
+    </div>
+    <div class='user-options align-right'>
+      <a href='./login.html'>Login</a> | <a href='./register.html'>Register</a>
+    </div>
+  </div>
 
   <div class='container'>
-
     <div class='panel-container item-top-left panel'>
       <div class='item-top-left'>
-        <b>Current Weather</b>
+        <span class='panel-title'>Current Weather</span>
       </div>
-      <div class='item-top-right align-center'>
+      <div class='item-top-middle-right align-center city-state'>
         <b>Denver, Colorado</b>
       </div>
-      <div class='item-top-middle-right align-center'>
-        11:11 10:31
+      <div class='item-middle-right align-center'>
+        <span class='datetime'><span id='clock'>00:00:00</span></span>
+        <span class='date' id='date'></span>
       </div>
-
       <div class='item-top-middle-left temperature'>
-        78°
+        <span class='temperature-box'>78°F</span>
       </div>
       <div class='item-middle-left'>
         <div class='row'>
           <span class='box'>High:<span class='temperature-small' id='high'>80°</span></span>
+          <span class='box'>Feels&nbsp;like:<span class='temperature-small' id='high'>60°</span></span>
           <span class='box'>Low:<span class='temperature-small' id='low'>40°</span></span>
         </div>
       </div>
     </div>
 
-    <div class='container item-top-right panel'>
+    <div class='panel-container item-top-right panel'>
       <div class='item-top-left'>
-        <b>Details</b>
+        <span class='panel-title'>Details</span>
       </div>
-      <div class='item-top-right align-right'>
-        Partly Sunny
+      <div class='item-top-middle-left'>
+        <span class='box'><img class='img-large' src='./styles/svg/clouds-and-sun.svg' alt='Sun and Clouds'/></span>
+      </div>
+      <div class='item-top-middle-right'>
+        <ul>
+          <li>Feels like:<span class='temperature-small align-right'>80°</span></li>
+          <li>Humidity:<span class='temperature-small align-right'>99%</span></li>
+          <li>Visibility:<span class='temperature-small align-right'>10mi</span></li>
+          <li>UV Index:<span class='temperature-small align-right'>7</span></li>
+        </ul>
+      </div>
+      <div class='item-middle-left'>
+        <span class='sexy-submit'>Today:</span>
+        <span class='sexy-submit'>Tonight:</span>
       </div>
     </div>
 
     <div class='container item-bottom-row panel'>
       <div class='item-top-row'>
-        <b>Forecast</b>
+        <span class='panel-title'>Forecast</span>
         <div class='row'>
-          <span class='box'>7am</span>
-          <span class='box'>8am</span>
-          <span class='box'>9am</span>
-          <span class='box'>10am</span>
-          <span class='box'>11am</span>
-          <span class='box'>12am</span>
-          <span class='box'>1pm</span>
-          <span class='box'>2pm</span>
+          <span class='box'><span class='time'>7am</span></span>
+          <span class='box'><span class='time'>8am</span></span>
+          <span class='box'><span class='time'>9am</span></span>
+          <span class='box'><span class='time'>10am</span></span>
+          <span class='box'><span class='time'>11am</span></span>
+          <span class='box'><span class='time'>12pm</span></span>
+          <span class='box'><span class='time'>1pm</span></span>
+          <span class='box'><span class='time'>2pm</span></span>
         </div>
         <div class='row'>
           <span class='box'>image</span>
@@ -64,28 +88,36 @@
           <span class='box'>image</span>
         </div>
         <div class='row'>
-          <span class='box'>Monday</span><span class='box'>image</span class='box'><span class='box'>99%<img src="./styles/drop.svg" alt="Humidity"></span><span class='box'>40° <img src="./styles/arrow-pointing-down.svg" alt="Low Temp"></span><span class='box'>80° <img src="./styles/arrow-up.svg" alt="High Temp"></span>
+          <span class='box'><span class='temperature-small' id='hourly-temp'>40°</span></span>
+          <span class='box'><span class='temperature-small' id='hourly-temp'>50°</span></span>
+          <span class='box'><span class='temperature-small' id='hourly-temp'>70°</span></span>
+          <span class='box'><span class='temperature-small' id='hourly-temp'>60°</span></span>
+          <span class='box'><span class='temperature-small' id='hourly-temp'>65°</span></span>
+          <span class='box'><span class='temperature-small' id='hourly-temp'>72°</span></span>
+          <span class='box'><span class='temperature-small' id='hourly-temp'>81°</span></span>
+          <span class='box'><span class='temperature-small' id='hourly-temp'>93°</span></span>
         </div>
         <div class='row'>
-          <span class='box'>Tuesday</span><span class='box'>image</span class='box'><span class='box'>99%<img src="./styles/drop.svg" alt="Humidity"></span><span class='box'>40° <img src="./styles/arrow-pointing-down.svg" alt="Low Temp"></span><span class='box'>80° <img src="./styles/arrow-up.svg" alt="High Temp"></span>
+          <span class='box'><span class='weekday-title'>Monday</span></span><span class='box'><img class='img-med' src='./styles/svg/rainbow-1.svg' alt='Sun and Clouds'/></span class='box'><span class='box'>99%<img class='img-small' src="./styles/drop.svg" alt="Humidity"></span><span class='box'>40° <img class='img-small' src="./styles/arrow-pointing-down.svg" alt="Low Temp"></span><span class='box'>80° <img class='img-small' src="./styles/arrow-up.svg" alt="High Temp"></span>
         </div>
         <div class='row'>
-          <span class='box'>Wednesday</span><span class='box'>image</span class='box'><span class='box'>99%<img src="./styles/drop.svg" alt="Humidity"></span><span class='box'>40° <img src="./styles/arrow-pointing-down.svg" alt="Low Temp"></span><span class='box'>80° <img src="./styles/arrow-up.svg" alt="High Temp"></span>
+          <span class='box'><span class='weekday-title'>Tuesday</span></span><span class='box'><img class='img-med' src='./styles/svg/storm-1.svg' alt='Sun and Clouds'/></span class='box'><span class='box'>99%<img class='img-small' src="./styles/drop.svg" alt="Humidity"></span><span class='box'>40° <img class='img-small' src="./styles/arrow-pointing-down.svg" alt="Low Temp"></span><span class='box'>80° <img class='img-small' src="./styles/arrow-up.svg" alt="High Temp"></span>
         </div>
         <div class='row'>
-          <span class='box'>Thursday</span><span class='box'>image</span class='box'><span class='box'>99%<img src="./styles/drop.svg" alt="Humidity"></span><span class='box'>40° <img src="./styles/arrow-pointing-down.svg" alt="Low Temp"></span><span class='box'>80° <img src="./styles/arrow-up.svg" alt="High Temp"></span>
+          <span class='box'><span class='weekday-title'>Wednesday</span></span><span class='box'><img class='img-med' src='./styles/svg/snowing.svg' alt='Sun and Clouds'/></span class='box'><span class='box'>99%<img class='img-small' src="./styles/drop.svg" alt="Humidity"></span><span class='box'>40° <img class='img-small' src="./styles/arrow-pointing-down.svg" alt="Low Temp"></span><span class='box'>80° <img class='img-small' src="./styles/arrow-up.svg" alt="High Temp"></span>
         </div>
         <div class='row'>
-          <span class='box'>Friday</span><span class='box'>image</span class='box'><span class='box'>99%<img src="./styles/drop.svg" alt="Humidity"></span><span class='box'>40° <img src="./styles/arrow-pointing-down.svg" alt="Low Temp"></span><span class='box'>80° <img src="./styles/arrow-up.svg" alt="High Temp"></span>
+          <span class='box'><span class='weekday-title'>Thursday</span></span><span class='box'><img class='img-med' src='./styles/svg/tornado.svg' alt='Sun and Clouds'/></span class='box'><span class='box'>99%<img class='img-small' src="./styles/drop.svg" alt="Humidity"></span><span class='box'>40° <img class='img-small' src="./styles/arrow-pointing-down.svg" alt="Low Temp"></span><span class='box'>80° <img class='img-small' src="./styles/arrow-up.svg" alt="High Temp"></span>
         </div>
         <div class='row'>
-          <span class='box'>Saturday</span><span class='box'>image</span class='box'><span class='box'>99%<img src="./styles/drop.svg" alt="Humidity"></span><span class='box'>40° <img src="./styles/arrow-pointing-down.svg" alt="Low Temp"></span><span class='box'>80° <img src="./styles/arrow-up.svg" alt="High Temp"></span>
+          <span class='box'><span class='weekday-title'>Friday</span></span><span class='box'><img class='img-med' src='./styles/svg/clouds.svg' alt='Sun and Clouds'/></span class='box'><span class='box'>99%<img class='img-small' src="./styles/drop.svg" alt="Humidity"></span><span class='box'>40° <img class='img-small' src="./styles/arrow-pointing-down.svg" alt="Low Temp"></span><span class='box'>80° <img class='img-small' src="./styles/arrow-up.svg" alt="High Temp"></span>
+        </div>
+        <div class='row'>
+          <span class='box'><span class='weekday-title'>Saturday</span></span><span class='box'><img class='img-med' src='./styles/svg/morning-snow.svg' alt='Sun and Clouds'/></span class='box'><span class='box'>99%<img class='img-small' src="./styles/drop.svg" alt="Humidity"></span><span class='box'>40° <img class='img-small' src="./styles/arrow-pointing-down.svg" alt="Low Temp"></span><span class='box'>80° <img class='img-small' src="./styles/arrow-up.svg" alt="High Temp"></span>
         </div>
       </div>
     </div>
-
   </div>
-  <!-- <h1>City placeholder</h1> -->
     <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
     </script>
