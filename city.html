@@ -32,12 +32,12 @@
         <span class='date' id='date'></span>
       </div>
       <div class='item-top-middle-left temperature'>
-        <span class='temperature-box'>78°F</span>
+        <span class='temperature-box' id='current-temperature'>78°F</span>
       </div>
       <div class='item-middle-left'>
         <div class='row'>
           <span class='box'>High:<span class='temperature-small' id='high'>80°</span></span>
-          <span class='box'>Feels like:<span class='temperature-small' id='high'>60°</span></span>
+          <span class='box'>Feels like:<span class='temperature-small' id='feels_like'>60°</span></span>
           <span class='box'>Low:<span class='temperature-small' id='low'>40°</span></span>
         </div>
       </div>
@@ -59,8 +59,10 @@
         </ul>
       </div>
       <div class='item-middle-left'>
-        <span class='sexy-submit'>Today:</span>
-        <span class='sexy-submit'>Tonight:</span>
+        <span class='sexy-submit'>Today: </span><span class='description-text' id='day_description'></span>
+      </div>
+      <div class='item-middle-right'>
+        <span class='sexy-submit'>Tonight: </span><span class='description-text' id='night_description'></span>
       </div>
     </div>
 
