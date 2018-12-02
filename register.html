@@ -6,24 +6,41 @@
   <title>Sweater Weather</title>
 </head>
 <body class='bg'>
+  
+  <div class='nav-bar'>
+    <div class='search-bar'>
+      <form action="./city.html">
+        <input type="text" name="location" onfocus="this.value=''" value="City, state...">
+        <input class='sexy-submit' type="submit" value="Search">
+      </form>
+    </div>
+    <div class='user-options align-right'>
+      <a href='./login.html'>Login</a> | <a href='./register.html'>Register</a>
+    </div>
+  </div>
 
-
-      <!--  the a tag below can link you to another HTML page  -->
-      <!--  if you click the button in the browser right now, you'll get an error because that is not a real file path -->
-
-      <div class='location-form'>
-        <form action="./register.html">
-          <h2>Register:</h4>
-          <h4>Username:</h4>
-          <input id='uname' type="text" name="username"><br>
-          <h4>Password:</h4>
-          <input id='password' type="password" name="password"><br>
-          <h4>Password Confirmation:</h4>
-          <input id='password_confirmation' type="password" name="password_confirmation"><br>
-
-          <input id='register' type="submit" value="Submit">
-        </form>
+  <div class=''>
+    <div class='location-form'>
+      <div>
+        <h2>Register:</h4>
       </div>
+      <div class=''>
+        <h4>Username:</h4>
+        <input id='email' type="text" name="email">
+      </div>
+      <div>
+        <h4>Password:</h4>
+        <input id='password' type="password" name="password">
+      </div>
+      <div>
+        <h4>Password Confirmation:</h4>
+        <input id='password_confirmation' type="password" name="password_confirmation">
+      </div>
+      <div>
+        <input id='register' type="submit" value="Submit">
+      </div>
+    </div>
+  </div>
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src="main.bundle.js"></script>
   <script src="lib/register.js"></script>

@@ -6,18 +6,23 @@
   <title>Sweater Weather</title>
 </head>
 <body class='bg'>
-
+  <div class='nav-bar'>
+    <div class='search-bar'>
+      <form action="./city.html">
+        <input type="text" name="location" onfocus="this.value=''" value="City, state...">
+        <input class='sexy-submit' type="submit" value="Search">
+      </form>
+    </div>
+    <div class='user-options align-right'>
+      <a href='./login.html'>Login</a> | <a href='./register.html'>Register</a>
+    </div>
+  </div>
 
       <!--  the a tag below can link you to another HTML page  -->
       <!--  if you click the button in the browser right now, you'll get an error because that is not a real file path -->
-
-      <div class='location-form'>
-        <form action="./city.html">
-          <h4>Enter your location:</h4>
-          <input type="text" name="location" onfocus="this.value=''" value="City, state..."><br>
-          <input type="submit" value="Submit">
-        </form>
-      </div>
+<div class='location-form'>
+  <h1>Welcome to Sweater Weather</h1>
+</div>
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src="main.bundle.js"></script>
 </body>

@@ -271,8 +271,11 @@ footer {
 }
 
 div.location-form {
-  display: flex;
+  margin: auto;
+  width: 50%;
+  display: block;
   justify-content: center;
+  text-align: center;
 }
 
 body {
