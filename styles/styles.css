@@ -18,6 +18,14 @@ input[type=text] {
   height: 25px;
 }
 
+input[type=password] {
+  font-size: 20px;
+  border-radius: 25px;
+  background-color: white;
+  width: 200px;
+  height: 25px;
+}
+
 .description-text {
   font-size: 14px;
 }
@@ -263,8 +271,11 @@ footer {
 }
 
 div.location-form {
-  display: flex;
+  margin: auto;
+  width: 50%;
+  display: block;
   justify-content: center;
+  text-align: center;
 }
 
 body {
