@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <title>Sweater Weather</title>
+</head>
+<body class='bg'>
+
+  <div class='nav-bar'>
+    <div class='search-bar'>
+      <form action="./city.html">
+        <input type="text" name="location" onfocus="this.value=''" value="City, state...">
+        <input class='sexy-submit' type="submit" value="Search">
+      </form>
+    </div>
+    <div class='user-options align-right'>
+      <a href='./login.html'>Login</a> | <a href='./register.html'>Register</a>
+    </div>
+  </div>
+
+  <div class=''>
+    <div class='location-form'>
+      <div>
+        <h2>Login:</h4>
+      </div>
+      <div class=''>
+        <h4>Username:</h4>
+        <input id='email' type="text" name="email">
+      </div>
+      <div>
+        <h4>Password:</h4>
+        <input id='password' type="password" name="password">
+      </div>
+      <div>
+        <input id='login' type="submit" value="Submit">
+      </div>
+    </div>
+  </div>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="main.bundle.js"></script>
+  <script src="lib/login.js"></script>
+</body>
+</html>
