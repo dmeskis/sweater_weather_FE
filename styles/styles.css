@@ -44,10 +44,12 @@ input[type=password] {
 a {
   font-weight: bold;
   color: white;
+  text-decoration: underline;
 }
 
 a:hover {
   color: #006beb;
+  cursor: pointer;
 }
 
 .search {
