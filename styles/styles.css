@@ -70,6 +70,10 @@ a:hover {
   padding-left: 10px;
 }
 
+.datetime-box {
+  display: block;
+}
+
 .datetime {
   justify-content: center;
   font-size: 30px;
@@ -279,6 +283,7 @@ div.location-form {
   justify-content: center;
   text-align: center;
 }
+
 
 body {
     background: black;
