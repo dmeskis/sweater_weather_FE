@@ -144,6 +144,11 @@ a:hover {
   justify-content: space-between;
 }
 
+.row2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .city-state {
   font-size: 30px;
 }
