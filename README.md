@@ -6,6 +6,7 @@ Sweater Weather is a project bridging between Mod 3 and Mod 4 at Turing School o
 
 # How to Use
 Check out the app at: https://dmeskis.github.io/sweater_weather_FE/
+Note: It may take a while for the back-end server to spin up as it is hosted on Heroku, please give it a few seconds to spin up to display the weather.
 
 Search for a location and see it in action!
 
