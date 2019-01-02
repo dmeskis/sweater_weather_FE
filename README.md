@@ -2,7 +2,7 @@
 
 # Description
 This is the front-end repository for the sweater weather project. The back-end repository can be found here: https://github.com/dmeskis/sweater_weather
-Sweater Weather is a project bridging between Mod 3 and Mod 4 at Turing School of Software and Design. I built out an API on the back-end in Mod 3 over one week that utilizes several API to fetch weather data, and built the front-end out over the first week of Mod 4.
+Sweater Weather is a project bridging between Mod 3 and Mod 4 at Turing School of Software and Design. I built out an API on the back-end in Mod 3 over one week that utilizes several other APIs to fetch weather data, and built the front-end out over the first week of Mod 4.
 
 ![Weather Page](https://i.imgur.com/XzqLmjp.jpg)
 
