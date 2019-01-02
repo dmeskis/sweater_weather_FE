@@ -4,6 +4,8 @@
 This is the front-end repository for the sweater weather project. The back-end repository can be found here: https://github.com/dmeskis/sweater_weather
 Sweater Weather is a project bridging between Mod 3 and Mod 4 at Turing School of Software and Design. I built out an API on the back-end in Mod 3 over one week that utilizes several API to fetch weather data, and built the front-end out over the first week of Mod 4.
 
+![Weather Page](https://i.imgur.com/XzqLmjp.jpg)
+
 # How to Use
 Check out the app at: https://dmeskis.github.io/sweater_weather_FE/
 Note: It may take a while for the back-end server to spin up as it is hosted on Heroku, please give it a few seconds to spin up to display the weather.
